@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAVAC Smart Lock — Khóa Thông Minh Cao Cấp</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>(function(){ document.documentElement.setAttribute('data-theme', localStorage.getItem('kavac_theme')||'dark'); })();</script>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <!-- LOGO: tự động dùng ảnh nếu có, fallback về chữ nếu không -->
+            <a href="index.html" class="logo">
+                <img src="images/kavac-logo-dark.svg"  alt="KAVAC" class="logo-img logo-for-dark">
+                <img src="images/kavac-logo-light.svg" alt="KAVAC" class="logo-img logo-for-light">
+            </a>
+            <ul class="nav-links">
+                <li><a href="pages/products.html">Sản Phẩm</a></li>
+                <li><a href="pages/about.html">Về Chúng Tôi</a></li>
+                <li><a href="pages/contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" title="Đổi giao diện">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                    <svg class="icon-sun"  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+                <a href="pages/cart.html" class="cart-btn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <a href="pages/login.html" class="btn-outline">Đăng Nhập</a>
+            </div>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-orb orb1"></div>
+            <div class="hero-orb orb2"></div>
+            <div class="grid-lines"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-tag">Công Nghệ 2025</span>
+            <h1 class="hero-title">Bảo Vệ<br><em>Thông Minh</em><br>Cho Ngôi Nhà Bạn</h1>
+            <p class="hero-sub">Khóa cửa thế hệ mới — nhận diện khuôn mặt 3D, vân tay, ứng dụng điện thoại. Không cần chìa khóa, không lo quên mật khẩu.</p>
+            <div class="hero-cta">
+                <a href="pages/products.html" class="btn-primary">Khám Phá Sản Phẩm</a>
+                <a href="pages/about.html" class="btn-ghost">Tìm Hiểu Thêm →</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Khách Hàng</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">99.9%</span><span class="stat-label">Độ Chính Xác</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">5 Năm</span><span class="stat-label">Bảo Hành</span></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="lock-showcase">
+                <div class="lock-card floating">
+                    <div class="lock-icon-wrap">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/><circle cx="12" cy="16" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <span>KAVAC V7 Pro</span>
+                    <span class="lock-price">7.500.000₫</span>
+                </div>
+                <div class="lock-badge badge1">Vân Tay</div>
+                <div class="lock-badge badge2">Nhận Diện Mặt</div>
+                <div class="lock-badge badge3">Ứng Dụng</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Tính Năng</span><h2>Tại Sao Chọn KAVAC?</h2></div>
+            <div class="features-grid">
+                <div class="feature-card"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>Mở Khóa 0.3s</h3><p>Tốc độ nhận diện vân tay và khuôn mặt cực nhanh, không gây chờ đợi.</p></div>
+                <div class="feature-card"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Bảo Mật Quân Sự</h3><p>Mã hóa AES-256, chống giả mạo vân tay silicon, chống ảnh giả khuôn mặt.</p></div>
+                <div class="feature-card"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div><h3>Điều Khiển Từ Xa</h3><p>Mở cửa, cấp quyền khách, xem lịch sử từ ứng dụng KAVAC mọi lúc mọi nơi.</p></div>
+                <div class="feature-card"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h3>Lắp Đặt 30 Phút</h3><p>Thiết kế plug-and-play, kỹ thuật viên tới tận nhà lắp đặt tại TP.HCM.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-preview">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Sản Phẩm Nổi Bật</span><h2>Bộ Sưu Tập Mới Nhất</h2></div>
+            <div class="products-grid" id="featuredProducts">
+                <div class="product-card skeleton"></div>
+                <div class="product-card skeleton"></div>
+                <div class="product-card skeleton"></div>
+            </div>
+            <div class="center-cta"><a href="pages/products.html" class="btn-primary">Xem Tất Cả Sản Phẩm</a></div>
+        </div>
+    </section>
+
+    <section class="unlock-banner">
+        <div class="container">
+            <h2>6 Phương Thức Mở Khóa</h2>
+            <div class="unlock-methods">
+                <div class="method"><div class="method-icon">👆</div><span>Vân Tay</span></div>
+                <div class="method"><div class="method-icon">👁</div><span>Khuôn Mặt 3D</span></div>
+                <div class="method"><div class="method-icon">🔑</div><span>Thẻ NFC</span></div>
+                <div class="method"><div class="method-icon">📱</div><span>Ứng Dụng</span></div>
+                <div class="method"><div class="method-icon">🔢</div><span>Mật Khẩu</span></div>
+                <div class="method"><div class="method-icon">🗝</div><span>Chìa Khẩn Cấp</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Khách Hàng Nói Gì</span><h2>Đánh Giá Thực Tế</h2></div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Lắp KAVAC V7 Pro cho căn hộ ở Quận 2, quá tiện! Nhận diện vân tay siêu nhanh, app dễ dùng."</p><div class="reviewer"><div class="avatar">TN</div><span>Trung Nguyễn, Q.2 TP.HCM</span></div></div>
+                <div class="testimonial-card featured-review"><div class="stars">★★★★★</div><p>"KAVAC Face X1 nhận diện kể cả đeo khẩu trang. Nhà mình 3 người dùng đều được hết, cực kỳ tiện."</p><div class="reviewer"><div class="avatar">LH</div><span>Linh Hoàng, Bình Thạnh TP.HCM</span></div></div>
+                <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Đặt hàng online, ship tới nhà, kỹ thuật viên lắp đặt trong 30 phút. KAVAC service 10 điểm!"</p><div class="reviewer"><div class="avatar">PM</div><span>Phú Minh, Thủ Đức TP.HCM</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                <img src="images/kavac-logo-dark.svg"  alt="KAVAC" class="logo-img logo-for-dark">
+                <img src="images/kavac-logo-light.svg" alt="KAVAC" class="logo-img logo-for-light">
+            </a>
+                <p>Khóa thông minh cao cấp<br>TP. Hồ Chí Minh, Việt Nam</p>
+                <div class="footer-socials"><a href="#">FB</a><a href="#">IG</a><a href="#">YT</a></div>
+            </div>
+            <div class="footer-links"><h4>Sản Phẩm</h4><ul><li><a href="pages/products.html?cat=1">Tự Động Hoàn Toàn</a></li><li><a href="pages/products.html?cat=2">Push-Pull</a></li><li><a href="pages/products.html?cat=3">Nhận Diện Khuôn Mặt</a></li></ul></div>
+            <div class="footer-links"><h4>Hỗ Trợ</h4><ul><li><a href="pages/contact.html">Liên Hệ</a></li><li><a href="#">Bảo Hành</a></li><li><a href="#">Lắp Đặt</a></li></ul></div>
+            <div class="footer-contact"><h4>Liên Hệ</h4><p>📍 TP. Hồ Chí Minh, Việt Nam</p><p>📞 1800 1234</p><p>✉ support@kavac.vn</p></div>
+        </div>
+        <div class="footer-bottom"><p>© 2025 KAVAC Smart Lock. Bảo lưu mọi quyền.</p></div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

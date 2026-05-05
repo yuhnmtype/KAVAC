@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <!-- Light mode version: dark logo, transparent background -->
+  <g transform="translate(0, -20)">
+    <path d="M 400 90 L 430 105 L 430 135 C 430 160 400 185 400 185 C 400 185 370 160 370 135 L 370 105 Z" fill="none" stroke="#0F172A" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="400" cy="125" r="5" fill="#0F172A"/>
+    <path d="M 400 130 L 400 145" stroke="#0F172A" stroke-width="4" stroke-linecap="round"/>
+    <text x="400" y="240" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#0F172A" text-anchor="middle" letter-spacing="12">KAVAC</text>
+    <circle cx="525" cy="195" r="5" fill="#3B82F6"/>
+    <text x="400" y="275" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#64748B" text-anchor="middle" letter-spacing="16">SMART LOCKS</text>
+  </g>
+</svg>
