@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm — KAVAC Smart Lock</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>(function(){ document.documentElement.setAttribute('data-theme', localStorage.getItem('kavac_theme')||'dark'); })();</script>
+</head>
+<body>
+    <nav class="navbar" id="navbar"><div class="nav-inner">
+        <a href="../index.html" class="logo">
+                <img src="../images/kavac-logo-dark.svg"  alt="KAVAC" class="logo-img logo-for-dark">
+                <img src="../images/kavac-logo-light.svg" alt="KAVAC" class="logo-img logo-for-light">
+            </a>
+        <ul class="nav-links"><li><a href="products.html" class="active">Sản Phẩm</a></li><li><a href="about.html">Về Chúng Tôi</a></li><li><a href="contact.html">Liên Hệ</a></li></ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" title="Đổi giao diện"><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+            <a href="cart.html" class="cart-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count" id="cartCount">0</span></a>
+            <a href="login.html" class="btn-outline">Đăng Nhập</a>
+        </div>
+    </div></nav>
+
+    <div class="page-hero"><div class="container"><span class="section-tag">Danh Mục</span><h1>Bộ Sưu Tập KAVAC</h1><p>Chọn sản phẩm phù hợp cho ngôi nhà của bạn tại TP.HCM</p></div></div>
+
+    <section class="products-page"><div class="container">
+        <div class="filter-bar">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-cat="all">Tất Cả</button>
+                <button class="filter-tab" data-cat="1">Tự Động Hoàn Toàn</button>
+                <button class="filter-tab" data-cat="2">Push-Pull</button>
+                <button class="filter-tab" data-cat="3">Nhận Diện Khuôn Mặt</button>
+            </div>
+            <div class="search-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" class="search-input" id="productSearch" placeholder="Tìm kiếm..."></div>
+        </div>
+        <div class="products-full-grid" id="productsGrid"></div>
+    </div></section>
+
+    <div class="modal-overlay" id="productModal">
+        <div class="modal">
+            <div class="modal-header"><div class="modal-category" id="modalCategory"></div><button class="modal-close" onclick="closeModal()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
+            <div class="modal-body">
+                <div class="modal-img" id="modalImg">🔐</div>
+                <div class="modal-info">
+                    <h2 id="modalName"></h2>
+                    <div class="modal-price" id="modalPrice"></div>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <div class="modal-methods"><h4>Phương Thức Mở Khóa</h4><div class="product-methods" id="modalMethods" style="margin-bottom:12px"></div></div>
+                    <div style="font-size:0.8rem;margin-top:4px" id="modalStock"></div>
+                    <div class="modal-actions"><button class="btn-primary btn-full" id="modalAddBtn">Thêm Vào Giỏ Hàng</button><a href="cart.html" class="btn-outline" style="padding:12px 20px;white-space:nowrap">Xem Giỏ →</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer"><div class="footer-inner">
+        <div class="footer-brand">
+            <a href="../index.html" class="logo">
+                <img src="../images/kavac-logo-dark.svg"  alt="KAVAC" class="logo-img logo-for-dark">
+                <img src="../images/kavac-logo-light.svg" alt="KAVAC" class="logo-img logo-for-light">
+            </a>
+            <p>Khóa thông minh cao cấp<br>TP. Hồ Chí Minh, Việt Nam</p>
+        </div>
+        <div class="footer-links"><h4>Sản Phẩm</h4><ul><li><a href="products.html?cat=1">Tự Động Hoàn Toàn</a></li><li><a href="products.html?cat=2">Push-Pull</a></li><li><a href="products.html?cat=3">Nhận Diện Khuôn Mặt</a></li></ul></div>
+        <div class="footer-links"><h4>Hỗ Trợ</h4><ul><li><a href="contact.html">Liên Hệ</a></li><li><a href="#">Bảo Hành</a></li></ul></div>
+        <div class="footer-contact"><h4>Liên Hệ</h4><p>📍 TP. Hồ Chí Minh</p><p>📞 1800 1234</p></div>
+    </div><div class="footer-bottom"><p>© 2025 KAVAC Smart Lock.</p></div></footer>
+
+    <script src="../js/global.js"></script><script src="../js/products.js"></script>
+</body></html>
